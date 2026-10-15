@@ -1,0 +1,116 @@
+@use "variables" as v;
+@use "mixin" as m;
+
+.footer {
+  background-color: #10271f;
+  color: #f7f5ef;
+  padding: 24px 6% 12px;
+  .footer__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 72px;
+    .footer__message {
+      flex: 1;
+      p {
+        font-size: 14px;
+        line-height: 1.8;
+        letter-spacing: 0.08em;
+        margin: 0;
+      }
+    }
+    .footer__logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      .footer__brand {
+        font-family: "Montserrat", sans-serif;
+        font-size: 11px;
+        letter-spacing: 0.18em;
+        margin: 0 0 4px;
+      }
+      h2 {
+        font-size: 21px;
+        font-weight: 400;
+        letter-spacing: 0.15em;
+        margin: 0;
+      }
+      span {
+        display: block;
+        font-family: "Montserrat", sans-serif;
+        font-size: 8px;
+        letter-spacing: 0.2em;
+        margin-top: 2px;
+      }
+    }
+    .footer__buttons {
+      display: flex;
+      gap: 12px;
+      justify-content: flex-end;
+      flex: 1;
+      .footer__button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        min-width: 115px;
+        padding: 12px 14px;
+        border: 1px solid rgba(247, 245, 239, 0.6);
+
+        color: #f7f5ef;
+
+        text-decoration: none;
+
+        font-size: 10px;
+
+        letter-spacing: 0.05em;
+
+        transition: background-color 0.3s;
+        span {
+          font-size: 12px;
+        }
+        &:hover {
+          background-color: rgba(247, 245, 239, 0.12);
+        }
+      }
+    }
+  }
+  .footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    border-top: 1px solid rgba(247, 245, 239, 0.25);
+    margin-top: 18px;
+    padding-top: 10px;
+    .footer__copyright {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      p {
+        font-size: 7px;
+        line-height: 1.6;
+        margin: 0;
+      }
+
+      .footer__copyright span {
+        white-space: nowrap;
+        font-size: 7px;
+        line-height: 1.6;
+        margin: 0;
+      }
+    }
+    .footer__links a {
+      color: #f7f5ef;
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+      font-size: 8px;
+      transition: color 0.3s;
+      &:hover {
+        color: #b89b5e;
+      }
+    }
+  }
+}

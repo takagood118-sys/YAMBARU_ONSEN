@@ -1,0 +1,79 @@
+@use'variables' as v;
+@use'mixin' as m;
+
+.header {
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 24px 60px;
+
+  color: var(--white);
+
+  z-index: 10;
+
+}
+
+.header__logo {
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 14px;
+
+  letter-spacing: 0.2em;
+
+}
+
+.header__nav {
+
+  margin-left: auto;
+
+  display: flex;
+
+  gap: 32px;
+
+}
+
+.header__nav a {
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 10px;
+
+  letter-spacing: 0.15em;
+  transition: 0.5s ease;
+  &:hover{
+    color: var(--gold);
+  }
+
+}
+
+.header__reservation {
+
+  margin-left: 40px;
+
+  padding: 12px 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.7);
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 9px;
+
+  letter-spacing: 0.15em;
+  transition: background-color 0.3s ease;
+  &:hover{
+    background-color: var(--sand);
+    color: var(--text-dark);
+  }
+
+}
