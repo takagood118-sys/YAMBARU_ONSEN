@@ -1,0 +1,169 @@
+@use "variables" as v;
+@use "mixin" as m;
+
+.header {
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 24px 60px;
+
+  color: var(--white);
+
+  z-index: 10;
+  @include m.sp {
+    padding: 20px 24px;
+    justify-content: space-between;
+
+    &.is-open {
+      .header__nav {
+        transform: translateX(0);
+
+        visibility: visible;
+      }
+    }
+  }
+  .header__item {
+    position: relative;
+  }
+  .header__submenu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px;
+    padding: 12px 0;
+    background-color: #f7f5ef;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 0.3 ease,
+      visibility 0s linear 0.3s;
+    display: block;
+    li {
+      width: 100%;
+      display: block;
+    }
+    a {
+      display: block;
+      white-space: nowrap;
+      padding: 12px 20px;
+      color: #183128;
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      &:hover {
+        background-color: #e9e5d9;
+      }
+    }
+  }
+  &__item:hover &__submenu,
+  &__item:focus-within &__submenu {
+    opacity: 1;
+
+    visibility: visible;
+  }
+  .header__menu-button {
+    display: none;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    z-index: 1001;
+    @include m.sp {
+      display: block;
+    }
+    span {
+      display: block;
+      width: 24px;
+      height: 1px;
+      margin: 6px auto;
+      background-color: var(--white);
+      transition: transform 0.3s ease;
+    }
+  }
+}
+
+.header__logo {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 14px;
+
+  letter-spacing: 0.2em;
+}
+
+.header__nav {
+  margin-left: auto;
+  // font-size: 15px;
+  @include m.sp {
+    position: fixed;
+    top: 0;
+    right: 0;
+    // width: min(80%, 360px);
+    height: 100vh;
+    padding: 100px 30px 40px;
+    background-color: #183128;
+    z-index: 1000;
+    transform: translateX(100%);
+    visibility: hidden;
+    transition:
+      transform 0.3s ease,
+      visibility 0.3s ease;
+  }
+
+  ul {
+    display: flex;
+
+    gap: 32px;
+    list-style: none;
+    @include m.sp {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+    }
+  }
+}
+
+.header__nav a {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 15px;
+
+  letter-spacing: 0.15em;
+  transition: 0.5s ease;
+  &:hover {
+    color: var(--gold);
+  }
+}
+
+.header__reservation {
+  margin-left: 40px;
+
+  padding: 12px 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.7);
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 9px;
+
+  letter-spacing: 0.15em;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: var(--sand);
+    color: var(--text-dark);
+  }
+}
