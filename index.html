@@ -21,23 +21,66 @@
 
   <body>
     <header class="header">
-      <div class="header__logo">YAMBARU ONSEN</div>
-
-      <nav class="header__nav">
-        <a href="#concept">CONCEPT</a>
-        <a href="#onsen">ONSEN</a>
-        <a href="#stay">ROOM</a>
-        <a href="#dining">DINING</a>
-        <a href="#yambaru">YAMBARU</a>
-        <a href="#access">ACCESS</a>
-      </nav>
-
-      <a
-        href="https://www.agoda.com/ja-jp/pages/agoda/default/DestinationSearchResult.aspx?selectedproperty=687113&city=106957&hid=687113&site_id=1922867&tag=05ed04e0-a0e7-4f50-bb5f-e3014598de36&gad_source=1&gad_campaignid=23562232077&gbraid=0AAAAA9_WXQrrtv0fdSEYogsLzu8iJBW_f&gclid=CjwKCAjw56zWBhB0EiwAdPOQOb-vtrJ96b-fi80cAa1R2SsXJguCOoIe0drQt0l-YrTKf53rMDIokRoCJPkQAvD_BwE&ds=l0ASq1ZIo%2BGHrIRp&sort=agodaRecommended"
-        class="header__reservation"
+      <!-- <div class="header__logo">YAMBARU ONSEN</div> -->
+      <button
+        class="header__menu-button"
+        type="button"
+        aria-label="メニューを開く"
+        aria-expanded="false"
+        aria-controls="global-menu"
       >
-        RESERVATION
-      </a>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="header__nav" id="global-menu">
+        <ul>
+          <li>
+            <a href="#concept">CONCEPT</a>
+          </li>
+
+          <!-- ONSEN -->
+
+          <li class="header__item">
+            <a href="#onsen">ONSEN</a>
+
+            <ul class="header__submenu">
+              <li><a href="onsen.html">温泉の魅力（一覧）</a></li>
+
+              <li><a href="onsen_roten.html">露天風呂</a></li>
+
+              <li><a href="onsen_uchiyu.html">内湯</a></li>
+
+              <li><a href="onsen_private.html">貸切風呂</a></li>
+
+              <li><a href="onsen_sauna.html">サウナ</a></li>
+            </ul>
+          </li>
+
+          <!-- ROOM -->
+
+          <li class="header__item">
+            <a href="#room">ROOM</a>
+
+            <ul class="header__submenu">
+              <li><a href="room.html">客室の魅力（一覧）</a></li>
+
+              <li><a href="room1.html">FOREST VILLA</a></li>
+
+              <li><a href="room2.html">OCEAN VIEW SUITE</a></li>
+
+              <li><a href="room3.html">YAMBARU ROOM</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#dining">DINING</a></li>
+
+          <li><a href="#yambaru">YAMBARU</a></li>
+
+          <li><a href="#access">ACCESS</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
@@ -93,7 +136,7 @@
           </div>
 
           <div class="concept__image">
-            <img src="img/concept.jpg" alt="やんばるの森" />
+            <img src="img/concept.webp" alt="やんばるの森" />
           </div>
         </div>
       </section>
@@ -102,7 +145,7 @@
       <section id="onsen" class="onsen">
         <div class="onsen__visual">
           <div class="onsen__main">
-            <img src="img/03_onsen_main.png" alt="やんばるの温泉" />
+            <img src="img/03_onsen_main.webp" alt="やんばるの温泉" />
           </div>
           <div class="onsen__inner">
             <div class="onsen__header">
@@ -118,8 +161,8 @@
               <div class="onsen__cards">
                 <article class="onsen__card">
                   <div class="onsen__image">
-                    <a href="#">
-                      <img src="img/onsen-roten.png" alt="露天風呂" />
+                    <a href="onsen_roten.html">
+                      <img src="img/onsen-roten.webp" alt="露天風呂" />
                     </a>
                     <p class="onsen__number">01</p>
                   </div>
@@ -129,8 +172,8 @@
 
                 <article class="onsen__card">
                   <div class="onsen__image">
-                    <a href="#">
-                      <img src="img/onsen-uchiyu.png" alt="内湯" />
+                    <a href="onsen_uchiyu.html">
+                      <img src="img/onsen-uchiyu.webp" alt="内湯" />
                     </a>
                     <p class="onsen__number">02</p>
                   </div>
@@ -140,8 +183,8 @@
 
                 <article class="onsen__card">
                   <div class="onsen__image">
-                    <a href="#">
-                      <img src="img/onsen-kashikiri.png" alt="貸切風呂" />
+                    <a href="onsen_private.html">
+                      <img src="img/onsen-kashikiri.webp" alt="貸切風呂" />
                     </a>
                     <p class="onsen__number">03</p>
                   </div>
@@ -151,8 +194,8 @@
 
                 <article class="onsen__card">
                   <div class="onsen__image">
-                    <a href="#">
-                      <img src="img/onsen-sauna.png" alt="サウナ" />
+                    <a href="onsen_sauna.html">
+                      <img src="img/onsen-sauna.webp" alt="サウナ" />
                     </a>
                     <p class="onsen__number">04</p>
                   </div>
@@ -160,7 +203,7 @@
                   <p>心と体を整える静かな時間。</p>
                 </article>
                 <div class="more">
-                  <a href="#">詳しく見る</a>
+                  <a href="onsen.html">詳しく見る</a>
                   <p>→</p>
                 </div>
               </div>
@@ -170,7 +213,7 @@
       </section>
       <!-- STAY -->
 
-      <section id="stay" class="stay">
+      <section id="room" class="stay">
         <div class="stay__inner">
           <div class="stay__header">
             <p>STAY</p>
@@ -189,7 +232,12 @@
           <div class="stay__cards">
             <article class="stay__card">
               <div class="stay__image">
-                <img src="img/stay_forest_villa.png" alt="森に包まれたヴィラ" />
+                <a href="room1.html">
+                  <img
+                    src="img/stay_forest_villa.webp"
+                    alt="森に包まれたヴィラ"
+                  />
+                </a>
               </div>
 
               <p class="stay__number">01</p>
@@ -201,10 +249,12 @@
 
             <article class="stay__card">
               <div class="stay__image">
-                <img
-                  src="img/stay_ocean_view_suite.png"
-                  alt="自然を望む開放的な客室"
-                />
+                <a href="room2.html">
+                  <img
+                    src="img/stay_ocean_view_suite.webp"
+                    alt="自然を望む開放的な客室"
+                  />
+                </a>
               </div>
 
               <p class="stay__number">02</p>
@@ -216,10 +266,12 @@
 
             <article class="stay__card">
               <div class="stay__image">
-                <img
-                  src="img/stay_yambaru_room.png"
-                  alt="木のぬくもりを感じる客室"
-                />
+                <a href="room3.html">
+                  <img
+                    src="img/stay_yambaru_room.webp"
+                    alt="木のぬくもりを感じる客室"
+                  />
+                </a>
               </div>
 
               <p class="stay__number">03</p>
@@ -231,7 +283,7 @@
           </div>
         </div>
         <div class="more">
-          <a href="#">詳しく見る</a>
+          <a href="room.html">詳しく見る</a>
           <p>→</p>
         </div>
       </section>
@@ -239,7 +291,7 @@
 
       <section id="dining" class="dining">
         <div class="dining__main">
-          <img src="img/dining-main.png" alt="沖縄の食材を使った料理" />
+          <img src="img/dining-main.webp" alt="沖縄の食材を使った料理" />
         </div>
 
         <div class="dining__overlay">
@@ -263,25 +315,25 @@
 
           <div class="dining__cards">
             <article class="dining__card">
-              <img src="img/dining-vegetables.png" alt="やんばる野菜" />
+              <img src="img/dining-vegetables.webp" alt="やんばる野菜" />
 
               <p>やんばる野菜</p>
             </article>
 
             <article class="dining__card">
-              <img src="img/dining-pork.png" alt="島豚" />
+              <img src="img/dining-pork.webp" alt="島豚" />
 
               <p>島豚</p>
             </article>
 
             <article class="dining__card">
-              <img src="img/dining-fish.png" alt="沖縄県産魚" />
+              <img src="img/dining-fish.webp" alt="沖縄県産魚" />
 
               <p>沖縄県産魚</p>
             </article>
 
             <article class="dining__card">
-              <img src="img/dining-fruit.png" alt="島の果実" />
+              <img src="img/dining-fruit.webp" alt="島の果実" />
 
               <p>島の果実</p>
             </article>
@@ -308,7 +360,7 @@
 
         <div class="yambaru__cards">
           <article class="yambaru__card">
-            <img src="img/yambaru-forest.png" alt="やんばるの森" />
+            <img src="img/yambaru-forest.webp" alt="やんばるの森" />
 
             <h3>FOREST</h3>
 
@@ -316,7 +368,7 @@
           </article>
 
           <article class="yambaru__card">
-            <img src="img/yambaru-sea.png" alt="やんばるの海" />
+            <img src="img/yambaru-sea.webp" alt="やんばるの海" />
 
             <h3>SEA</h3>
 
@@ -324,7 +376,7 @@
           </article>
 
           <article class="yambaru__card">
-            <img src="img/yambaru-life.png" alt="やんばるの生き物" />
+            <img src="img/yambaru-life.webp" alt="やんばるの生き物" />
 
             <h3>LIFE</h3>
 
@@ -332,7 +384,7 @@
           </article>
 
           <article class="yambaru__card">
-            <img src="img/yambaru-sunset.png" alt="やんばるの夕景" />
+            <img src="img/yambaru-sunset.webp" alt="やんばるの夕景" />
 
             <h3>SUNSET</h3>
 
@@ -404,7 +456,7 @@
 
         <div class="information__map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6625.771955487793!2d128.2080519058174!3d26.776450326802095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1791703414305!5m2!1sja!2sjp"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d21592.784091579375!2d128.1802059432371!3d26.736724269587036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1792063720968!5m2!1sja!2sjp"
             width="600"
             height="450"
             style="border: 0"
@@ -460,5 +512,6 @@
         </nav>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
