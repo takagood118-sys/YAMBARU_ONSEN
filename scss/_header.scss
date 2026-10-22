@@ -66,6 +66,9 @@
       text-decoration: none;
       transition: background-color 0.3s ease;
       font-size: 12px;
+      @include m.sp {
+        font-size: 8px;
+      }
       &:hover {
         background-color: #e9e5d9;
       }
