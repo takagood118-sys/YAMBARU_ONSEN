@@ -49,6 +49,9 @@
       opacity 0.3 ease,
       visibility 0s linear 0.3s;
     display: block;
+    @include m.sp {
+      width: 100px;
+    }
     li {
       width: 100%;
       display: block;
@@ -58,10 +61,11 @@
       white-space: nowrap;
       padding: 12px 20px;
       color: #183128;
-      font-size: 12px;
+      font-size: 10px;
       letter-spacing: 0.08em;
       text-decoration: none;
       transition: background-color 0.3s ease;
+      font-size: 12px;
       &:hover {
         background-color: #e9e5d9;
       }

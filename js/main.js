@@ -12,3 +12,21 @@ menuButton.addEventListener("click", () => {
 
   document.querySelector(".header").classList.toggle("is-open", !isOpen);
 });
+
+// メニュー内のリンクをクリックしたらメニューを閉じる
+
+const headerLinks = document.querySelectorAll(".header__nav a");
+
+headerLinks.forEach((link) => {
+
+  link.addEventListener("click", () => {
+
+    menuButton.setAttribute("aria-expanded", "false");
+
+    menuButton.setAttribute("aria-label", "メニューを開く");
+
+    document.querySelector(".header").classList.remove("is-open");
+
+  });
+
+});
