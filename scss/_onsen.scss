@@ -20,12 +20,19 @@
         font-size: 40px;
         font-weight: 400;
         line-height: 1.5;
+        @include m.sp{
+          font-size: 22px;
+        }
       }
     }
     .onsen__cards {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 32px;
+      @include m.sp{
+        display: flex;
+        flex-direction: column;
+      }
       .onsen__card {
         min-width: 0;
         overflow: hidden;
@@ -40,6 +47,9 @@
             transition:
               transform 0.6s ease,
               filter 0.6s ease;
+              @include m.sp{
+                height: 120px;
+              }
             &:hover {
               transform: scale(1.05);
               filter: brightness(0.8);

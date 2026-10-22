@@ -9,14 +9,26 @@
     padding: 24px 5%;
     background-color: var(--cream);
     color: var(--text-dark); 
+    @include m.sp{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
     .information__news{
         padding-right: 26px;
         border-right: 1px solid var(--sand);
+        @include m.sp{
+            border-right: none;
+            width: 100%;
+        }
         .information__heading{
             display: flex;
             align-items: center;
             gap: 20px;
             margin-bottom: 12px;
+            @include m.sp{
+                width: 100%;
+            }
             h2{
                 font-family: "Montserrat", sans-serif;
                 font-size: 10px;
@@ -55,6 +67,9 @@
     .information__access{
         padding-right: 26px;
         border-right: 1px solid var(--sand);
+        @include m.sp{
+            border-right: none;
+        }
         .information__address{
             margin: 0 0 8px;
             font-size: 10px;
