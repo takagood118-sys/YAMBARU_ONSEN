@@ -105,6 +105,9 @@
       padding: 8px 12px;
       width: fit-content;
       transition: background-color 0.8s ease;
+      @include m.sp{
+        font-size: 10px;
+      }
       &:hover {
         background-color: var(--sand);
         color: var(--text-dark);

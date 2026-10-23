@@ -688,6 +688,11 @@ main {
   width: fit-content;
   transition: background-color 0.8s ease;
 }
+@media (max-width: 800px) {
+  .onsen__visual .more {
+    font-size: 10px;
+  }
+}
 .onsen__visual .more:hover {
   background-color: var(--sand);
   color: var(--text-dark);
@@ -789,6 +794,7 @@ main {
 @media (max-width: 800px) {
   .stay .stay__inner {
     flex-direction: column;
+    align-items: flex-start;
   }
 }
 .stay .stay__inner .stay__header {
@@ -832,6 +838,7 @@ main {
   .stay .stay__inner .stay__cards {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 }
 .stay .stay__inner .stay__cards .stay__card {
@@ -855,6 +862,7 @@ main {
 }
 .stay .stay__inner .stay__cards .stay__card .stay__image {
   overflow: hidden;
+  width: 100%;
 }
 .stay .stay__inner .stay__cards .stay__card .stay__image img {
   display: block;
@@ -890,8 +898,6 @@ main {
 @media (max-width: 800px) {
   .stay .more {
     font-size: 10px;
-    max-width: auto;
-    margin: 0 auto;
     margin-top: 40px;
   }
 }
