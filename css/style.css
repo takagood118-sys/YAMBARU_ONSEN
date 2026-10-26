@@ -1305,7 +1305,7 @@ header {
   height: 50px;
   display: flex;
   align-items: center;
-  padding: 24px 60px;
+  padding-left: 10px;
   color: #183128;
   z-index: 10;
   position: fixed;
