@@ -2,7 +2,7 @@
 @use "mixin" as m;
 
 .header {
-  position: absolute;
+  // position: absolute;
 
   top: 0;
 
@@ -19,8 +19,10 @@
   color: var(--white);
 
   z-index: 10;
+  background-color: #183128;
+  position: fixed;
   @include m.sp {
-    padding: 20px 24px;
+    padding: 13px 24px;
     justify-content: space-between;
 
     &.is-open {
@@ -109,6 +111,14 @@
   font-size: 14px;
 
   letter-spacing: 0.2em;
+  position: absolute;
+  z-index: 20;
+  // padding: 70px 20px;
+
+  @include m.sp {
+    font-size: 8px;
+    position: static;
+  }
 }
 
 .header__nav {
