@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --forest-dark: #162923;
   --forest: #253a32;
@@ -32,7 +33,6 @@ body {
 }
 
 a {
-  color: inherit;
   text-decoration: none;
 }
 
@@ -141,15 +141,18 @@ main {
   transition: transform 0.3s ease;
 }
 
-.header__logo {
+.header__log {
   font-family: "Cormorant Garamond", serif;
   font-size: 14px;
   letter-spacing: 0.2em;
   position: absolute;
   z-index: 20;
 }
+.header__log a {
+  color: #fff;
+}
 @media (max-width: 800px) {
-  .header__logo {
+  .header__log {
     font-size: 8px;
     position: static;
   }
@@ -191,6 +194,7 @@ main {
   font-size: 15px;
   letter-spacing: 0.15em;
   transition: 0.5s ease;
+  color: #fff;
 }
 .header__nav a:hover {
   color: var(--gold);
@@ -703,6 +707,9 @@ main {
   width: fit-content;
   transition: background-color 0.8s ease;
 }
+.onsen__visual .more a {
+  color: var(--gold);
+}
 @media (max-width: 800px) {
   .onsen__visual .more {
     font-size: 10px;
@@ -798,7 +805,6 @@ main {
   text-align: center;
   font-size: 20px;
   font-weight: 400;
-  margin: 10px auto 100px;
 }
 @media (max-width: 800px) {
   .onsen1_title {
@@ -811,7 +817,7 @@ main {
 }
 .onsen1 .onsen_visual {
   width: 100%;
-  height: 900px;
+  height: 700px;
   margin-bottom: 20px;
 }
 @media (max-width: 800px) {
@@ -822,7 +828,7 @@ main {
 }
 .onsen1 .onsen_visual img {
   width: 100%;
-  height: 900px;
+  height: 700px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center 80%;
@@ -861,6 +867,9 @@ main {
     width: calc(100% - 40px);
   }
 }
+.onsen1 .onsen_text .more {
+  color: var(--gold);
+}
 @media (max-width: 800px) {
   .onsen1 .onsen_text .more {
     margin: 20px;
@@ -872,6 +881,7 @@ main {
   padding: 8px 12px;
   width: -moz-fit-content;
   width: fit-content;
+  color: var(--gold);
 }
 .onsen1 .onsen_text .more a:hover {
   background-color: var(--sand);
@@ -993,11 +1003,16 @@ main {
   transition: background 0.8s ease;
   width: -moz-fit-content;
   width: fit-content;
+  margin-left: 50px;
+}
+.stay .more a {
+  color: var(--gold);
 }
 @media (max-width: 800px) {
   .stay .more {
     font-size: 10px;
     margin-top: 40px;
+    margin-left: 0;
   }
 }
 .stay .more:hover {
@@ -1303,21 +1318,86 @@ main {
   border: 0;
 }
 
-header {
+.header-detail {
   position: relative;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  padding-left: 10px;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  box-sizing: border-box;
   color: #183128;
   z-index: 10;
   position: fixed;
   top: 0;
   left: 0;
+  margin-bottom: 30px;
+  padding: 24px 60px;
 }
+@media (max-width: 800px) {
+  .header-detail {
+    padding: 13px 24px;
+  }
+  .header-detail .header__nav ul li a {
+    color: #fff;
+  }
+}
+@media (max-width: 800px) and (max-width: 800px) {
+  .header-detail .header__nav {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .header-detail.is-open .header__nav {
+    display: block;
+  }
+  .header-detail .header__menu-button {
+    display: none;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    z-index: 1001;
+  }
+}
+@media (max-width: 800px) and (max-width: 800px) {
+  .header-detail .header__menu-button {
+    display: block;
+  }
+}
+@media (max-width: 800px) {
+  .header-detail .header__menu-button span {
+    display: block;
+    width: 24px;
+    height: 1px;
+    margin: 6px auto;
+    background-color: var(--white);
+    transition: transform 0.3s ease;
+  }
+}
+.header-detail .header__logo a {
+  display: block;
+  margin-right: auto !important;
+  color: #fff;
+}
+@media (max-width: 800px) {
+  .header-detail .header__logo a {
+    color: #fff;
+    font-size: 8px;
+  }
+}
+.header-detail .header__home a {
+  margin-left: auto !important;
+  color: #fff;
+}
+@media (max-width: 800px) {
+  .header-detail .header__home a {
+    color: #fff;
+    font-size: 8px;
+  }
+}
+
 .onsen_title {
   text-align: center;
   font-family: "Noto Serif JP", serif;
@@ -1327,5 +1407,104 @@ header {
 @media (max-width: 800px) {
   .onsen_title {
     display: none;
+  }
+}
+
+.top {
+  min-height: 84vh;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 800px) {
+  .top {
+    flex-direction: column;
+    min-height: auto;
+    gap: 0;
+  }
+}
+.top .slideshow {
+  position: relative;
+  width: 65%;
+  height: 84vh;
+  overflow: hidden;
+}
+@media (max-width: 800px) {
+  .top .slideshow {
+    width: 100%;
+    height: 60svh;
+  }
+}
+.top .slideimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0;
+  animation: fadeInOut 20s infinite;
+}
+.top {
+  /* 画像ごとの表示タイミングを遅らせる */
+}
+.top .slideimg:nth-child(1) {
+  animation-delay: 0s;
+}
+.top .slideimg:nth-child(2) {
+  animation-delay: 4s;
+}
+.top .slideimg:nth-child(3) {
+  animation-delay: 8s;
+}
+.top .slideimg:nth-child(4) {
+  animation-delay: 12s;
+}
+.top .slideimg:nth-child(5) {
+  animation-delay: 16s;
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.top .visual_text {
+  width: 35%;
+}
+@media (max-width: 800px) {
+  .top .visual_text {
+    padding-left: 30px;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+}
+.top .visual_text h3 {
+  padding-bottom: 20px;
+}
+@media (max-width: 800px) {
+  .top .visual_text h3 {
+    font-size: 15px;
+    padding-top: 30px;
+  }
+}
+.top .visual_text p {
+  line-height: 1.7;
+}
+@media (max-width: 800px) {
+  .top .visual_text p {
+    font-size: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

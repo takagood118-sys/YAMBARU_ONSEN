@@ -19,10 +19,133 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
+  <body>
+    <header class="header header-detail" >
+      <div class="header__logo"><a href="index.html">YAMBARU ONSEN</a></div>
+      <button
+        class="header__menu-button"
+        type="button"
+        aria-label="メニューを開く"
+        aria-expanded="false"
+        aria-controls="global-menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+            <nav class="header__nav" id="global-menu">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="onsen.html">温泉一覧</a></li>
+          <li><a href="room.html">客室一覧</a></li>
+        </ul>
+        </nav>
 
-    <body>
-    <header></header>
-    <main></main>
+
+    </header>
+    <main>
+      <!-- <h1 class="onsen1_title">客室 ROOM</h1> -->
+      <section class="onsen1">
+        <div class="onsen_visual">
+          <img src="img/stay_forest_villa.webp" alt="" />
+        </div>
+        <div class="onsen_text fadein">
+          <h2 class="sub_title">FOREST VILLA</h2>
+          <p>森に包まれる、特別な一室。</p>
+          <p>
+            窓の向こうに広がる、やんばるの深い緑。<br />
+            木のぬくもりに満ちた空間と、森を望む開放的なテラスが、日常を忘れる穏やかな時間を届けます<br />
+            鳥のさえずりや風の音に耳を傾けながら、<br />心ゆくまでくつろぐひととき。<br />
+            自然の美しさと上質な安らぎが調和する、<br />あなただけの特別な滞在を。
+          </p>
+          <div class="more">
+            <a href="room1.html">詳細を見る→</a>
+          </div>
+        </div>
+      </section>
+      <section class="onsen1">
+        <div class="onsen_visual fadein">
+          <img src="img/stay_ocean_view_suite.webp" alt="" />
+        </div>
+        <div class="onsen_text fadein">
+          <h2 class="sub_title">OCEAN VIEW SUITE</h2>
+          <p>景色を楽しむ、開放的な時間。</p>
+          <p>
+            森を眺め、心をほどく。<br />
+            窓一面に広がる、やんばるの森と青い海。<br />
+            朝のやわらかな光も、水平線に沈む夕日も、ここで過ごす時間を特別なものに。<br />
+            日常を離れ、自然の美しさに身を委ねる、贅沢な滞在をお楽しみください。
+          </p>
+          <div class="more">
+            <a href="room2.html">詳細を見る→</a>
+          </div>
+        </div>
+      </section>
+      <section class="onsen1">
+        <div class="onsen_visual fadein">
+          <img src="img/stay_yambaru_room.webp" alt="" />
+        </div>
+        <div class="onsen_text fadein">
+          <h2 class="sub_title">YAMBARU ROOM</h2>
+          <p>やんばるの自然を感じる客室</p>
+          <p>
+            窓の向こうに広がる、やんばるの豊かな緑。<br />
+            畳の香りを感じる落ち着いた空間に、<br />
+            木のぬくもりとやわらかな光が満ちていく。<br />
+            日本の伝統美と森の静けさが調和する、<br />
+            心安らぐ滞在をお楽しみください。
+          </p>
+          <div class="more">
+            <a href="room3.html">詳細を見る→</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <!-- メインエリア -->
+      <div class="footer__main">
+        <!-- 左側：キャッチコピー -->
+        <div class="footer__message">
+          <p>
+            あなたの沖縄に、<br />
+            もうひとつの目的地を。
+          </p>
+        </div>
+
+        <!-- 中央：ロゴ -->
+        <div class="footer__logo">
+          <p class="footer__brand">YAMBARU ONSEN</p>
+          <h2>湯音</h2>
+          <span>-YUON-</span>
+        </div>
+
+        <!-- 右側：予約ボタン -->
+        <div class="footer__buttons">
+          <a href="#" class="footer__button"> 宿泊予約 <span>→</span> </a>
+
+          <a href="#" class="footer__button"> 日帰り入浴予約 <span>→</span> </a>
+        </div>
+      </div>
+
+      <!-- 下部エリア -->
+      <div class="footer__bottom">
+        <div class="footer__copyright">
+          <p>
+            ※このサイトは架空の温泉施設を題材に制作したデザインです。
+            実在の施設ではありません。
+          </p>
+          <span>CONCEPT SITE / FICTIONAL PROJECT</span>
+        </div>
+
+        <nav class="footer__links">
+          <a href="#">Instagram</a>
+          <a href="#contact">Contact</a>
+          <a href="#access">Access</a>
+          <a href="#privacy">Privacy Policy</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
-
 </html>

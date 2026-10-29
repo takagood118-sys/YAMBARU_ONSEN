@@ -18,11 +18,99 @@
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
+  <body>
+    <header class="header header-detail" >
+      <div class="header__logo"><a href="index.html">YAMBARU ONSEN</a></div>
+      <button
+        class="header__menu-button"
+        type="button"
+        aria-label="メニューを開く"
+        aria-expanded="false"
+        aria-controls="global-menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+            <nav class="header__nav" id="global-menu">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="onsen.html">温泉一覧</a></li>
+          <li><a href="room.html">客室一覧</a></li>
+        </ul>
+        </nav>
 
 
-    <body>
-    <header></header>
-    <main></main>
+    </header>
+    <main>
+      <!-- <h1 class="more_title">サウナ</h1> -->
+      <div class="top">
+        <div class="slideshow">
+          <img src="img/onsen-sauna.webp" alt="" class="slideimg" />
+          <img src="img/sauna1.webp" alt="" class="slideimg" />
+          <img src="img/sauna2.webp" alt="" class="slideimg" />
+          <img src="img/sauna3.webp" alt="" class="slideimg" />
+          <img src="img/sauna4.webp" alt="" class="slideimg" />
+        </div>
+        <div class="visual_text">
+          <h3>木の温もりに包まれ、心まで静かに整う。</h3>
+          <p>
+            木の香りと柔らかな灯りに包まれた、<br />
+            落ち着きのあるサウナ空間。<br />
+            ゆっくりと身体を温めながら、日常の喧騒を忘れ、<br />
+            自分自身と向き合うひとときを。<br>
+            深い安らぎに身を委ね、心も身体も解きほぐされていく。<br>
+            森の静けさと調和する、<br>
+            湯音ならではの癒やしの時間をお過ごしください。
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <!-- メインエリア -->
+      <div class="footer__main">
+        <!-- 左側：キャッチコピー -->
+        <div class="footer__message">
+          <p>
+            あなたの沖縄に、<br />
+            もうひとつの目的地を。
+          </p>
+        </div>
+
+        <!-- 中央：ロゴ -->
+        <div class="footer__logo">
+          <p class="footer__brand">YAMBARU ONSEN</p>
+          <h2>湯音</h2>
+          <span>-YUON-</span>
+        </div>
+
+        <!-- 右側：予約ボタン -->
+        <div class="footer__buttons">
+          <a href="#" class="footer__button"> 宿泊予約 <span>→</span> </a>
+
+          <a href="#" class="footer__button"> 日帰り入浴予約 <span>→</span> </a>
+        </div>
+      </div>
+
+      <!-- 下部エリア -->
+      <div class="footer__bottom">
+        <div class="footer__copyright">
+          <p>
+            ※このサイトは架空の温泉施設を題材に制作したデザインです。
+            実在の施設ではありません。
+          </p>
+          <span>CONCEPT SITE / FICTIONAL PROJECT</span>
+        </div>
+
+        <nav class="footer__links">
+          <a href="#">Instagram</a>
+          <a href="#contact">Contact</a>
+          <a href="#access">Access</a>
+          <a href="#privacy">Privacy Policy</a>
+        </nav>
+      </div>
+    </footer>
   </body>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </html>

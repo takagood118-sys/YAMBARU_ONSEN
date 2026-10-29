@@ -105,15 +105,17 @@
   }
 }
 
-.header__logo {
+.header__log {
   font-family: "Cormorant Garamond", serif;
 
   font-size: 14px;
-
   letter-spacing: 0.2em;
   position: absolute;
   z-index: 20;
   // padding: 70px 20px;
+  a{
+    color: #fff;
+  }
 
   @include m.sp {
     font-size: 8px;
@@ -161,6 +163,7 @@
 
   letter-spacing: 0.15em;
   transition: 0.5s ease;
+  color: #fff;
   &:hover {
     color: var(--gold);
   }

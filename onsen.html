@@ -20,13 +20,33 @@
   </head>
 
   <body>
-    <header>
+    <header class="header header-detail" >
       <div class="header__logo"><a href="index.html">YAMBARU ONSEN</a></div>
+      <button
+        class="header__menu-button"
+        type="button"
+        aria-label="メニューを開く"
+        aria-expanded="false"
+        aria-controls="global-menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+            <nav class="header__nav" id="global-menu">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="onsen.html">温泉一覧</a></li>
+          <li><a href="room.html">客室一覧</a></li>
+        </ul>
+        </nav>
+
+
     </header>
     <main>
-      <h1 class="onsen1_title">温泉 ONSEN</h1>
+      <!-- <h1 class="onsen1_title">温泉 ONSEN</h1> -->
       <section class="onsen1">
-        <div class="onsen_visual fadein">
+        <div class="onsen_visual">
           <img src="img/onsen-roten.webp" alt="" />
         </div>
         <div class="onsen_text fadein">
@@ -38,7 +58,7 @@
             湯に身をゆだねる、贅沢なひととき。
           </p>
           <div class="more">
-            <a href="#">詳細を見る→</a>
+            <a href="onsen_roten.html">詳細を見る→</a>
           </div>
         </div>
       </section>
@@ -56,7 +76,7 @@
             日常を忘れ、心静かに過ごすひとときを。
           </p>
           <div class="more">
-            <a href="#">詳細を見る→</a>
+            <a href="onsen_uchiyu.html">詳細を見る→</a>
           </div>
         </div>
       </section>
@@ -75,7 +95,7 @@
             心ほどけるひとときを。
           </p>
           <div class="more">
-            <a href="#">詳細を見る→</a>
+            <a href="onsen_private.html">詳細を見る→</a>
           </div>
         </div>
       </section>
@@ -92,7 +112,7 @@
             森の静けさと調和する、湯音ならではの癒やしの時間をお過ごしください。
           </p>
           <div class="more">
-            <a href="#">詳細を見る→</a>
+            <a href="onsen_sauna.html">詳細を見る→</a>
           </div>
         </div>
       </section>
